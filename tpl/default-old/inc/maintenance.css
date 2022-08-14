@@ -1,0 +1,107 @@
+
+html{
+	width: 100%;
+	margin: 0 auto;
+	margin-right: 0px;
+}
+
+body {
+    background-size: cover;
+    overflow-x: hidden;
+    background-color: #08638f;
+    background: url(../img/bg.png) 0 0px repeat;
+    font-family: Arial;
+    overflow: scroll;
+    display: inline-block;
+	overflow-x: hidden;
+	max-width: 100% !important;
+	 min-width: 0;
+	 color: white;
+	     padding-left: 25%;
+}
+
+p{
+	margin: 0; 
+	padding: 0;
+	word-break: break-all;
+	
+}
+a:visited,a:active,a:link{
+	color: white;
+    text-decoration: none;
+}
+
+.button {
+    width: 155px;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 220px;
+}
+
+.divider{
+	border-top: 1px dotted #041d2c;
+	width: 98%;
+	margin-left: 0px;
+	clear: both;
+}
+@keyframes MoveUpDown {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-3px); }
+}
+.button:hover:not(h1), .button:hover > img {
+	cursor: pointer;
+	animation: MoveUpDown 0.5s infinite alternate;
+}
+
+.content{
+    box-shadow: 0px 0px 10px 0px #d5d7f3;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 3px;
+    /* width: 53%; */
+    height: auto;
+    margin-left: 20px;
+    background: linear-gradient(45deg, #215897, #00000057);
+    padding: 5px;
+    /* float: left; */
+    width: 120%;
+    text-align: center;
+}
+
+.header{
+text-transform: uppercase;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.elapsed{
+	position: absolute;
+    right: 20px;
+    top: -10px;
+    background: linear-gradient(0deg, #aaa8a8, #dedede);
+    box-shadow: 1px 1px 5px #000000;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #333333;
+    text-shadow: 1px 1px 4px white;
+    border-radius: 3px;
+    border: 1px solid #6f6f6f;
+}
+
+.wordbreak{
+	word-break: break-word;
+}
+
+.clearfix{
+	clear:both;
+}
+
+span{
+	color: black;text-transform: uppercase;font-weight: 700;
+}

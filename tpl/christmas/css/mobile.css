@@ -1,0 +1,43 @@
+/*### Smartphones (portrait and landscape)(small)### */
+@media screen and (min-width : 0px) and (max-width : 1000px){
+/*Style*/
+	#wrapper{
+		width: 1000px !important;
+		height: 100vh !important;
+	}
+}
+/* only when orientation is in portrait mode */
+@media screen and (orientation:portrait) {
+    .landscape {
+        display: block !important;
+    }
+}
+
+.scrn.l, .scrn.r{
+	margin-top: 10px !important;
+}
+
+.scrn.b {
+	display: none;
+}
+
+.slot {
+	margin-left: 40px !important;
+	margin-bottom: 15px !important;
+}
+
+.eslot{
+	margin-bottom: 15px !important;
+}
+
+.slot > .healthBar {
+	left: 43px !important;
+}
+
+.mobile{
+	height: 330px;
+}
+
+.menu{
+	display: none;
+}

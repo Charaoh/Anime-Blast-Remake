@@ -1,0 +1,17 @@
+/* only when orientation is in portrait mode */
+@media screen and (orientation:portrait) {
+    .landscape {
+        display: block !important;
+    }
+}
+#middle{
+	margin-top: 30px !important;
+	margin-bottom: 0px !important;
+}
+
+#bottom {
+	bottom: 0px !important;
+}
+#selection{
+    height: 550px !important;
+}

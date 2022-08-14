@@ -1,0 +1,82 @@
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+AuthType Basic
+AuthName "Password Required"
+Require valid-user
+AuthUserFile /home/anime-blast/public_html/.htpasswd
+
+
+RewriteRule ^profile/([0-9a-zA-Z\s\(\)\+\*\%]+) index.php?s=profile&user=$1 [QSA,L,NC]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^topic/([0-9a-zA-Z]+)/([0-9]+)$ index.php?s=viewtopic&t=$1&page=$2&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^topic/([0-9a-zA-Z]+)$ index.php?s=viewtopic&t=$1&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^forum$ index.php?s=forum%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^characters-and-skills/([0-9a-zA-Z\s\(\)]+)$ index.php?s=viewtopic&c=$1%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^characters-and-skills index.php?s=viewforum&f=20 [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^clan/profile/([0-9a-zA-Z\s\(\)\+\*\%]+)$ index.php?s=clan&id=$1&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^clans$ index.php?s=clan&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^missions$ index.php?s=missions%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^password-recovery$ index.php?s=lostpassword%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^logout$ index.php?s=logout%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^forum/([0-9a-zA-Z]+) index.php?s=viewforum&f=$1&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^control-panel$ index.php?s=ucp&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^mail$ index.php?s=mail&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^the-team$ index.php?s=groups&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^terms-of-service index.php?s=tos&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^report index.php?s=report&%{QUERY_STRING} [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^ingame index.php?s=game&mode=selection [NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^battle index.php?s=game&mode=battle [NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^search/([0-9a-zA-Z-_*\s]+)$ index.php?s=search&mode=search&term=$1&%{QUERY_STRING} [NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^search index.php?s=search&mode=search[NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^search index.php?s=search[NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^new-posts index.php?s=search&mode=new[NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^exclusive$ index.php?s=exclusive&u=$1&%{QUERY_STRING}[NC,L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^shop$ index.php?s=shop [NC,L]
