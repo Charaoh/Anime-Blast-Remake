@@ -350,8 +350,8 @@ window.onload = getCharacters();
 											});
 									} else {
 										// If revived--->
-										if (d(".slot." + l[i]).find(".skills").hasClass('wait')) {
-											d(".slot." + l[i]).find(".skills").prepend('<img class="selected fl-l opacity" src="https://www.anime-blast.com/tpl/default/css/images/select.png" style="display: none;">')
+										if(d(".slot." + l[i]).find(".skills").hasClass('wait')){
+											d(".slot." + l[i]).find(".skills").prepend('<img class="selected fl-l opacity" src="http://www.anime-blast.com/tpl/default/css/images/select.png" style="display: none;">')
 											d(".slot." + l[i]).find(".skills").removeClass('wait');
 										}
 										d(".slot." + l[i]).find(".skills>*").slice(1).remove();

@@ -172,9 +172,23 @@ class system
         );
 
         $replace = array(
-            '<div class="custom-character"><p class="author">By ' . $user->name($post_row['author_id']) . '</p>
-			<div class="character-layout" style="width: 75%;margin: 0 auto;"><h2><img id="1" class="filter" src="https://www.anime-blast.com/tpl/default/img/read.png">$1</h2><img class="character" src="$2"><p>$3<br class="clearfix"></p><div class="information"><p class="hp_mana">HP <span style="background: #51d964;">$4</span></p><br class="clearfix"><p class="hp_mana">MANA <span style="background: #34d0f1;">$5</span></p></div></div><br class="clearfix">$6</div>',
-            '<div class="skill-layout"><h2>$1</h2><img class="skill" src="$2"><p>$3<br class="clearfix"></p><div class="information"><p class="viewc">Cooldown: $4</p><p class="hp_mana">MANA <span style="background: #34d0f1;">$5</span><br class="clearfix">$6</p></div></div>',
+            '<div class="custom-character">
+             <p class="author">By ' . $user->name($post_row['author_id']) . '</p>
+			 <div class="character-layout" style="width: 100%;margin: 0 auto;">
+             <h2><img id="1" class="filter" src="https://www.anime-blast.com/tpl/default/img/read.png">$1</h2>
+             <img class="character" src="$2"><p>$3</p>
+             <br class="clearfix">
+             <div class="information">
+             <span class="p-1 mx-1 mt-1 hp" style="background: #51d964;">$4 Health</span>
+             <span class="p-1 mx-1 mt-1 mana" style="background: #34d0f1;">$5 Mana</span>
+             </div></div><br class="clearfix">$6</div>',
+            '<div class="skill-layout">
+            <div class="soverlay"><h2>$1</h2><img class="skill" src="$2"><span class="custcd">$3</span>
+            <div class="information"><div>
+            <span class="viewc">Cooldown: $4</span>
+            <span class="viewclass">$6</span>
+            <span class="hp_mana">$5 Mana</span>
+             </div></div></div></div>',
             '<strong>$1</strong>',
             '<em>$1</em>',
             '<u>$1</u>',
@@ -186,9 +200,9 @@ class system
             '<iframe title="YouTube video player" width="640" height="385" src="https://www.youtube.com/embed/$1?rel=0" frameborder="0" allowfullscreen></iframe>',
             '<div align="$1">$2</div>',
             '<div style="padding:0px;background-color:#FFFFFF;border:0px solid #d8d8d8;">
-	<input type="button" class="formcss" value="View $1" onclick="var container=this.parentNode.getElementsByTagName(\'div\')[0];if(container.style.display!=\'\')  {container.style.display=\'\';this.value=\'Hide $1\';} else {container.style.display=\'none\';this.value=\'View $1\';}" />
-	<div style="display:none;word-wrap:break-word;overflow:hidden;"><div class="quote">$2</div></div>
-	</div>',
+	        <input type="button" class="formcss" value="View $1" onclick="var container=this.parentNode.getElementsByTagName(\'div\')[0];if(container.style.display!=\'\')  {container.style.display=\'\';this.value=\'Hide $1\';} else {container.style.display=\'none\';this.value=\'View $1\';}" />
+	        <div style="display:none;word-wrap:break-word;overflow:hidden;"><div class="quote">$2</div></div>
+	        </div>',
             '<br />'
         );
         // Emojis :D
@@ -226,6 +240,7 @@ class system
         }
         return $codes;
     }
+
     public function keywordReplacements($string)
     {
         global $system, $db, $user;
@@ -243,6 +258,7 @@ class system
 
         return $string;
     }
+
     public function time($timestamp, $string = "F j, Y, g:i A")
     {
         global $account;
@@ -250,6 +266,7 @@ class system
         $time = date($string . '', $real);
         return $time;
     }
+
     public function humanTiming($time)
     {
 

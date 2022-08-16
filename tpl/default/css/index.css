@@ -101,7 +101,7 @@
 * {
   margin: 0;
   padding: 0;
-  user-select: none;
+  /* user-select: none; */
 }
 
 :root {
@@ -1729,11 +1729,13 @@ img.ind-news {
   .postcontent {
     flex: 80%;
     overflow: scroll;
+    font-size: 13px;
   }
 
   .postcontent img {
     flex: 80%;
     overflow: scroll;
+    font-size: 13px;
   }
 
   .postbody {
@@ -2287,6 +2289,8 @@ td>a.acpfont {
 
 .postcontent {
   flex: 80%;
+  overflow: scroll;
+  font-size: 13px;
 }
 
 .postbody {
@@ -2294,10 +2298,11 @@ td>a.acpfont {
   background-color: #131415;
   padding: 10px;
   margin-top: 5px;
+  width: 100%;
 }
 
 .postbody .authors .posters {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .postbody .authors img {
@@ -3769,13 +3774,14 @@ img {
   background: linear-gradient(226deg, rgb(0 0 0 / 0%), rgb(19 19 19));
   background-size: cover;
   /* border-top: 1px dashed #121212; */
-  padding: 0.5em;
+  padding: 0.2em;
 }
 
 #characters>.navigate {
-  margin-block: 20px;
-  font-weight: lighter;
+  margin: .5em;
   font-size: 24px;
+  font-weight: bold;
+  width: 100%;
 }
 
 #characters>.navigate a {
@@ -4372,6 +4378,70 @@ small,
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+
+.custom-character {
+  width: 75%;
+  height: auto;
+  font-size: 12px;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+.skill-layout>.soverlay>.custcd {
+  background: linear-gradient(0deg, rgb(215 12 12 / 25%), rgb(31 29 31 / 85%));
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  border: 1px dashed #6a6a6a;
+  padding: 1em;
+  margin-top: 0.5em;
+}
+
+.skill-layout>.soverlay>.information {
+  position: relative;
+  /* display: inline-block; */
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  /* padding: 1em; */
+  /* margin-top: 0.5em; */
+}
+
+.skill-layout>.soverlay>.information>span.viewclass {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 1px 1px #000000;
+  color: white;
+  border: 0.2em solid rgb(0 0 0 / 50%);
+  padding: 0.2em;
+  background: #9c1120;
+}
+
+.skill-layout>.soverlay>.information>span.viewc {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 1px 1px #000000;
+  color: white;
+  border: 0.2em solid rgb(0 0 0 / 50%);
+  padding: 0.2em;
+  background: #9c1120;
+}
+
+.skill-layout>.soverlay>.information>.energy {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 1px 1px #686868;
+  color: white;
+  border: 0.2em solid rgb(38 38 38 / 50%);
+  padding: 0.2em;
+  background: #34d0f1;
 }
 
 /* p.viewc {
@@ -5230,11 +5300,12 @@ p {
 }
 
 .cell-5>.content #clanmain {
-  margin-left: 1em;
+  /* margin-left: 1em; */
   width: 14.5rem;
   height: 100%;
+  padding: .5em;
   box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 25px 22px !important;
-  background: linear-gradient(90deg, rgb(29 30 32 / 71%), rgb(0 0 0 / 0%)),
+  background: linear-gradient(90deg, rgb(0 0 0 / 71%), rgb(0 0 0 / 0%)),
     url(../img/backgrounds/sitebg.png) no-repeat center !important;
   background-size: 35rem !important;
   display: -ms-flexbox;

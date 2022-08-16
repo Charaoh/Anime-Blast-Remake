@@ -80,13 +80,11 @@
 <!-- END moderator -->
 
 <div id="characters">
-    <div class="paginate my-1">{PAGINATE}</div>
-
-    <div class="navigate title">
+    <div class="navigate">
         <span>{TOPIC_NAME}</span>
     </div>
     <!-- BEGIN row -->
-    <div id="{KEY}" class="topic-container">
+    <div id="{KEY}" class="content">
         <div>
             <div class="posthead" class="title">{BOX}<b> {KEY}</b>
             </div>
@@ -101,9 +99,9 @@
         <div class="authors">
             <div class="posters">{AUTHOR}</div>
             {AVATAR}
-            <div>{RANK}</div>
-            <div><strong>{L_POSTS}:</strong> <u>{POSTCOUNT}</u></div>
-            <div><strong>{L_REPUTATION}:</strong> <u>{REPUTATION}</u></div>
+            <div style="font-size:13px;">{RANK}</div>
+            <div style="font-size:13px;"><strong>{L_POSTS}:</strong> <u>{POSTCOUNT}</u></div>
+            <div style="font-size:13px;"><strong>{L_REPUTATION}:</strong> <u>{REPUTATION}</u></div>
         </div>
 
         <div class="postcontent">
@@ -112,29 +110,30 @@
             <div class="forum-signature">
                 {SIGNATURE}
             </div>
-        </div>
-    </div>
-    <div class="cell1 my-1">
-        <div style="height: auto; text-align:right;">
-            <!-- BEGIN rep -->
-            <a href="{URL}?s=viewtopic&amp;t={T}&amp;mode=reputation-add&amp;post_id={ID}" class="formcss2">+
-                {L_REP}</a>
-            <a href="{URL}?s=viewtopic&amp;t={T}&amp;mode=reputation-remove&amp;post_id={ID}" class="formcss2">-
-                {L_REP}</a>
-            <!-- END rep -->
-            <!-- BEGIN logged_in -->
-            <a href="{URL}profile/{AUTHOR_NAME}" class="formcss2">{L_PROFILE}</a>
-            <a href="{URL}mail?mode=new&amp;user={AUTHOR_ID}" class="formcss2">{L_MAIL}</a>
-            <a href="{URL}topic/{T}?mode=quote&amp;post_id={ID}" class="formcss2">{L_QUOTE}</a>
-            <a href="{URL}topic/{T}?mode=report&amp;post_id={ID}" class="formcss2">{L_REPORT}</a>
-            <!-- END logged_in -->
-            <!-- BEGIN authorbutton -->
-            <a href="{URL}topic/{T}?mode=edit&amp;post_id={ID}" class="formcss2">{L_EDIT}</a>
-            <!-- END authorbutton -->
-            <!-- BEGIN attachbutton -->
-            <a href="{URL}./topic/{T}?mode=delete_attachment&amp;post_id={ID}"
-                class="formcss2">{L_DELETE_ATTACHMENT}</a>
-            <!-- END attachbutton -->
+
+            <div class="my-1">
+                <div style="height: auto; text-align:right;">
+                    <!-- BEGIN rep -->
+                    <a href="{URL}?s=viewtopic&amp;t={T}&amp;mode=reputation-add&amp;post_id={ID}" class="formcss2">+
+                        {L_REP}</a>
+                    <a href="{URL}?s=viewtopic&amp;t={T}&amp;mode=reputation-remove&amp;post_id={ID}" class="formcss2">-
+                        {L_REP}</a>
+                    <!-- END rep -->
+                    <!-- BEGIN logged_in -->
+                    <a href="{URL}profile/{AUTHOR_NAME}" class="formcss2">{L_PROFILE}</a>
+                    <a href="{URL}mail?mode=new&amp;user={AUTHOR_ID}" class="formcss2">{L_MAIL}</a>
+                    <a href="{URL}topic/{T}?mode=quote&amp;post_id={ID}" class="formcss2">{L_QUOTE}</a>
+                    <a href="{URL}topic/{T}?mode=report&amp;post_id={ID}" class="formcss2">{L_REPORT}</a>
+                    <!-- END logged_in -->
+                    <!-- BEGIN authorbutton -->
+                    <a href="{URL}topic/{T}?mode=edit&amp;post_id={ID}" class="formcss2">{L_EDIT}</a>
+                    <!-- END authorbutton -->
+                    <!-- BEGIN attachbutton -->
+                    <a href="{URL}./topic/{T}?mode=delete_attachment&amp;post_id={ID}"
+                        class="formcss2">{L_DELETE_ATTACHMENT}</a>
+                    <!-- END attachbutton -->
+                </div>
+            </div>
         </div>
     </div>
     <!-- END row -->
@@ -143,13 +142,6 @@
     </form>
     <!-- END moderator -->
 
-
-
-    <div class="active-content">
-        <div class="boxone" style="font-weight:bolder; color: #ffffff;">{L_VIEWING}</div>
-        <div class="boxtwo" style="color: #2c2b2c;"></div>
-        <div class="boxthree" style="color: #fff;">{USERS}</div>
-    </div>
     <!-- END normal -->
 
 
@@ -222,7 +214,7 @@
                             <tr>
                                 <td width="100%" colspan="2">
                                     <div class="justify-content-left"><textarea name="message" id="message" rows="4"
-                                            cols="40" style="width: 98%; height: 50"
+                                            cols="40" style="width: 98%; height: 12em"
                                             class="formcss">{MESSAGE}</textarea></div>
                                 </td>
                             </tr>

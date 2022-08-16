@@ -189,7 +189,7 @@
             <div class="sidebar-footer">
                 <div class="d-flex" style="justify-content:center;">
                     <a class="mx-2 btn btn-custom" style="background-color: ##9c1120;"
-                        href="https://discord.gg/52uVv5WS" role="button">
+                        href="https://discord.gg/kDr5Y8Jn4M" role="button">
                         <i class="fab fa-discord"></i></a>
 
 
@@ -217,7 +217,7 @@
                         <span class="regClose">&times;</span>
                         <h1 style="text-align:center;"> Welcome to Anime-Blast!</h1>
                         <p style="text-align:center;">If you haven't already, join our <a
-                                href="https://discord.gg/CP8pZSA6" target="_blank">Discord community</a> to talk
+                                href="https://discord.gg/kDr5Y8Jn4M" target="_blank">Discord community</a> to talk
                             directly with other players and staff here!</p>
 
                         <h2 class="button"

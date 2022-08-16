@@ -3228,20 +3228,15 @@ class Functions extends GAjax
     	<source src="./tpl/default/sound/start.mp3" />
 		</audio>';
 		$return .= '<audio id="click" preload="auto" style="display:none;">
-    <source src="./tpl/default/sound/click.mp3" />
-</audio>';
+    	<source src="./tpl/default/sound/click.mp3" /></audio>';
 		$return .= '<audio id="choosen" preload="auto" style="display:none;">
-    <source src="./tpl/default/sound/choosen.mp3" />
-</audio>';
+    	<source src="./tpl/default/sound/choosen.mp3" /></audio>';
 		$return .= '<audio id="end-turn" preload="auto" style="display:none;">
-    <source src="./tpl/default/sound/end.mp3" />
-</audio>';
+    	<source src="./tpl/default/sound/end.mp3" /></audio>';
 		$return .= '<audio id="lose" preload="auto" style="display:none;">
-    <source src="./tpl/default/sound/lose.mp3" />
-</audio>';
+    	<source src="./tpl/default/sound/lose.mp3" /></audio>';
 		$return .= '<audio id="win" preload="auto" style="display:none;">
-    <source src="./tpl/default/sound/win.mp3" />
-</audio>';
+    	<source src="./tpl/default/sound/win.mp3" /></audio>';
 		return $return;
 	}
 

@@ -545,7 +545,7 @@ if ($mode == 'edit' && isset($_GET['post_id'])) {
         $key++;
     }
     if (empty($post_style))
-        $post_style = '<td style="font-weight:bolder; text-align:center;" class="whiter">No comments found</td>';
+        $post_style = '<div style="font-weight:bolder; text-align:center;" class="whiter">No comments found</div>';
 
     // Character?
     $character = '';
