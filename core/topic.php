@@ -763,10 +763,11 @@ if ($mode == 'edit' && isset($_GET['post_id'])) {
 				<br class="clearfix">
 				' . $archive . '
 				</div>
-                </div><!-- END skill_' . $_ . ' -->';
+                </div>
+                <!-- END skill_' . $_ . ' -->';
             }
         }
-        $character .= '</div></div>';
+        $character .= '</div>';
         if (!empty($alts)) {
             $character .= '<h4 class="my-2 alternative" style="color:#ffffff; text-align:center; font-weight:bolder;">Alternative Skills</h1></div>' . $alts;
         }

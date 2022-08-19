@@ -34,7 +34,7 @@
     <!-- BEGIN content -->
     <script type="text/javascript" src="{URL}tpl/beta/java/jquery.js"></script>
     <script type="text/javascript" src="{URL}tpl/beta/java/bxslider.js"></script>
-    <script type="text/javascript" src="{URL}tpl/default/java/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{URL}tpl/default/java/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="{URL}tpl/default/css/bxslider.css">
     <link rel="stylesheet" type="text/css" href="{URL}tpl/default/css/bootstrap.css">
     <!-- END content -->
@@ -52,7 +52,7 @@
             <div class="sidebar-content">
                 <div class="sidebar-brand">
                     <div id="close-sidebar">
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-times mt-1" style="color:white; font-weight:bold;font-size:16px"></i>
                     </div>
                 </div>
 
@@ -157,26 +157,33 @@
                         <li class=" nav-item button my-1 mx-1">
                             <a href="{URL}" class="btn btn-custom2">
                                 <i class="fa fa-home"></i>
-                                <span class="ml-2">Homepage</span>
+                                <span class="ml-2">Homepage</span><br>
+                                <small>Check out the latest news!</small>
 
                             </a>
                         </li>
                         <li class=" nav-item button my-1 mx-1">
                             <a href="https://www.youtube.com/watch?v=1M_bM-hzTjU" class="btn btn-custom2">
-                                <i class="fa fa-ellipsis-h"></i>
-                                <span class="ml-2">Game Manual</span>
+                                <i class="fa fa-school"></i>
+                                <span class="ml-2">Game Mechanics</span><br>
+                                <small>Learn how to play Anime-Blast!</small>
 
                             </a>
                         </li>
                         <li class=" nav-item button my-1 mx-1">
                             <a href="{URL}characters-and-skills" class="btn btn-custom2">
                                 <i class="fa fa-theater-masks"></i>
-                                <span class="ml-2">Characters</span>
+                                <span class="ml-2">Characters</span><br>
+                                <small>View the roster and build a team!</small>
                             </a>
                         </li>
                         <li class=" nav-item button my-1 mx-1">
-                            <a href="{URL}terms-of-service" class="btn btn-custom2"><i class="fa fa-info"></i><span
-                                    class="ml-2">Terms of Service</span></a>
+                            <a href="{URL}terms-of-service" class="btn btn-custom2">
+                                <i class="fa-solid fa-spell-check"></i>
+                                <span class="ml-2">Terms of Service</span><br>
+                                <small>FAQ and more about the site.</small>
+
+                            </a>
                         </li>
                         <!-- END logged_out -->
 

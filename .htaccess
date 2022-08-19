@@ -1,11 +1,6 @@
 Options +SymLinksIfOwnerMatch
 RewriteEngine on
 
-AuthType Basic
-AuthName "Password Required"
-Require valid-user
-AuthUserFile /home/anime-blast/public_html/.htpasswd
-
 
 RewriteRule ^profile/([0-9a-zA-Z\s\(\)\+\*\%]+) index.php?s=profile&user=$1 [QSA,L,NC]
 RewriteCond %{REQUEST_FILENAME} !-d 

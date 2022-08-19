@@ -495,7 +495,7 @@ if ($mode == 'selection') {
 	$STYLE->__add('files', 'JAVA', '', '/java/jquery.js?v=');
 	$STYLE->__add('files', 'JAVA', '', '/java/jquery-ui.js');
 	$STYLE->__add('files', 'JAVA', '', '/java/jquery.ui.touch-punch.min.js');
-	$STYLE->__add('files', 'JAVA', '', '/java/jquery.mobile.js');
+	$STYLE->__add('files', 'JAVA', '', '/java/bootstrap.bundle.js');
 	$STYLE->__add('files', 'JAVA', '', '/java/howler.js');
 	$STYLE->__add('files', 'JAVA', '', '/java/player.js');
 	$STYLE->__add('files', 'JAVA', '', '/java/sweetalert.js');
